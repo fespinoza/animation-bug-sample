@@ -8,20 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9BEDA7AF20078741007140A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7AE20078741007140A0 /* AppDelegate.swift */; };
-		9BEDA7B120078741007140A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7B020078741007140A0 /* ViewController.swift */; };
 		9BEDA7B420078741007140A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDA7B220078741007140A0 /* Main.storyboard */; };
 		9BEDA7B620078741007140A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDA7B520078741007140A0 /* Assets.xcassets */; };
 		9BEDA7B920078741007140A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEDA7B720078741007140A0 /* LaunchScreen.storyboard */; };
+		9BEDA7C1200788AF007140A0 /* GradientImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7C0200788AF007140A0 /* GradientImageView.swift */; };
+		9BEDA7C3200788E1007140A0 /* ImageSwapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7C2200788E1007140A0 /* ImageSwapperView.swift */; };
+		9BEDA7C520078954007140A0 /* ImageSwappingLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7C420078954007140A0 /* ImageSwappingLogic.swift */; };
+		9BEDA7C720078D1F007140A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7C620078D1F007140A0 /* ViewController.swift */; };
+		9BEDA7C920078EC8007140A0 /* SuperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEDA7C820078EC8007140A0 /* SuperCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9BEDA7AB20078741007140A0 /* AnimationBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEDA7AE20078741007140A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BEDA7B020078741007140A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BEDA7B320078741007140A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BEDA7B520078741007140A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BEDA7B820078741007140A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BEDA7BA20078741007140A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEDA7C0200788AF007140A0 /* GradientImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientImageView.swift; sourceTree = "<group>"; };
+		9BEDA7C2200788E1007140A0 /* ImageSwapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSwapperView.swift; sourceTree = "<group>"; };
+		9BEDA7C420078954007140A0 /* ImageSwappingLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSwappingLogic.swift; sourceTree = "<group>"; };
+		9BEDA7C620078D1F007140A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BEDA7C820078EC8007140A0 /* SuperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperCell.swift; sourceTree = "<group>"; };
+		9BEDA7CA2007A32C007140A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +63,17 @@
 		9BEDA7AD20078741007140A0 /* AnimationBug */ = {
 			isa = PBXGroup;
 			children = (
+				9BEDA7C620078D1F007140A0 /* ViewController.swift */,
 				9BEDA7AE20078741007140A0 /* AppDelegate.swift */,
-				9BEDA7B020078741007140A0 /* ViewController.swift */,
 				9BEDA7B220078741007140A0 /* Main.storyboard */,
+				9BEDA7C820078EC8007140A0 /* SuperCell.swift */,
+				9BEDA7C0200788AF007140A0 /* GradientImageView.swift */,
+				9BEDA7C420078954007140A0 /* ImageSwappingLogic.swift */,
+				9BEDA7C2200788E1007140A0 /* ImageSwapperView.swift */,
 				9BEDA7B520078741007140A0 /* Assets.xcassets */,
 				9BEDA7B720078741007140A0 /* LaunchScreen.storyboard */,
 				9BEDA7BA20078741007140A0 /* Info.plist */,
+				9BEDA7CA2007A32C007140A0 /* README.md */,
 			);
 			path = AnimationBug;
 			sourceTree = "<group>";
@@ -136,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEDA7B120078741007140A0 /* ViewController.swift in Sources */,
+				9BEDA7C720078D1F007140A0 /* ViewController.swift in Sources */,
+				9BEDA7C3200788E1007140A0 /* ImageSwapperView.swift in Sources */,
 				9BEDA7AF20078741007140A0 /* AppDelegate.swift in Sources */,
+				9BEDA7C920078EC8007140A0 /* SuperCell.swift in Sources */,
+				9BEDA7C520078954007140A0 /* ImageSwappingLogic.swift in Sources */,
+				9BEDA7C1200788AF007140A0 /* GradientImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +296,7 @@
 				DEVELOPMENT_TEAM = 2Z7R9FQBNN;
 				INFOPLIST_FILE = AnimationBug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.AnimationBug;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fespinozacast.AnimationBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +311,7 @@
 				DEVELOPMENT_TEAM = 2Z7R9FQBNN;
 				INFOPLIST_FILE = AnimationBug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.schibsted.AnimationBug;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fespinozacast.AnimationBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
