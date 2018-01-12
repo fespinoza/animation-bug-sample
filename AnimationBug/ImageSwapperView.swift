@@ -92,6 +92,10 @@ public class ImageSwapperView: UIView {
 
     self.backgroundImageView.alpha = 0.0
     self.backgroundImageView.transform = CGAffineTransform(translationX: delta, y: 0)
+
+    if let animator = animator {
+      animator.stopAnimation(true)
+    }
   }
 
   public func prepareAnimation() {
@@ -99,9 +103,9 @@ public class ImageSwapperView: UIView {
     backgroundImageView.alpha = 0.0
     backgroundImageView.transform = CGAffineTransform(translationX: delta, y: 0)
 
-    if let animator = animator {
-      animator.stopAnimation(true)
-    }
+//    if let animator = animator {
+//      animator.stopAnimation(true)
+//    }
 
     animator = UIViewPropertyAnimator(duration: 0.5, curve: .linear, animations: { [unowned self] in
       self.foregroundImageView.alpha = 0.0

@@ -93,8 +93,17 @@ class ViewController: UITableViewController {
     cell.imageSwapperView.foregroundImage = story.tabs[0].background
     cell.imageSwapperView.backgroundImage = story.tabs[1].background
 
+    cell.imageSwapperView.prepareAnimation()
+
     return cell
    }
+
+  override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    if let cell = cell as? SuperCell {
+      print("cleanup after end displaying")
+      cell.imageSwapperView.cleanup()
+    }
+  }
 
   /*
    // Override to support conditional editing of the table view.
