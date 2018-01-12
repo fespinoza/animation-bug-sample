@@ -21,5 +21,5 @@ but shows the right values when the animation works.
 
 Here is a video showing the issue: https://www.dropbox.com/s/3vb6f50xqt3p8w5/ScreenRecording_01-12-2018%2009-29-48.MP4?dl=0
 
-A sample project with the code can be found here:
+A sample project with the code can be found here: https://github.com/fespinoza/animation-bug-sample
 
